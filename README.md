@@ -1,11 +1,10 @@
-#	Room 	Attacktive Directory
+#Room 		Attacktive Directory
 > Mayank Srivastava | 17 dec 2020
-==========================================
-	Target OS 	Windows Difficulty 	Medium
-	Description 	99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller?
-	Maker 	Sq00ky
- =========================================
-
+--------------------------------------------------
+##Target OS 	Windows Difficulty 	Medium
+##Description 	99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller?
+##Maker 	Sq00ky
+---------------------------------------------------------------
 #	Reconnaissance
 ``` As always I can Run a nmap scan against the IP  ```
 
