@@ -1,0 +1,47 @@
+# Nmap 7.91 scan initiated Thu Dec 17 19:05:58 2020 as: nmap -sC -sV -oN nmap/initial 10.10.103.197
+Nmap scan report for 10.10.103.197
+Host is up (0.63s latency).
+Not shown: 987 closed ports
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2020-12-17 13:36:21Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: THM-AD
+|   NetBIOS_Domain_Name: THM-AD
+|   NetBIOS_Computer_Name: ATTACKTIVEDIREC
+|   DNS_Domain_Name: spookysec.local
+|   DNS_Computer_Name: AttacktiveDirectory.spookysec.local
+|   Product_Version: 10.0.17763
+|_  System_Time: 2020-12-17T13:36:57+00:00
+| ssl-cert: Subject: commonName=AttacktiveDirectory.spookysec.local
+| Not valid before: 2020-09-16T22:48:24
+|_Not valid after:  2021-03-18T22:48:24
+|_ssl-date: 2020-12-17T13:37:08+00:00; +2s from scanner time.
+Service Info: Host: ATTACKTIVEDIREC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1s, deviation: 0s, median: 0s
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2020-12-17T13:36:58
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 17 19:07:24 2020 -- 1 IP address (1 host up) scanned in 86.47 seconds
