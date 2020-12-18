@@ -1,8 +1,7 @@
 #	Room 	Attacktive Directory
 #	Mayank Srivastava | 17 dec 2020
 --------------------------------------------
-##	Target OS 	Windows
-##	Difficulty 	Easy
+##	Target OS 	Windows Difficulty 	Medium
 ##	Description 	99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller?
 ##	Maker 	Sq00ky
 ---------------------------------------------
